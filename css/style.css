@@ -70,6 +70,9 @@ header .profile .picture {
     border: solid 1px var(--primary-color);
     border-radius: 50%;
     overflow: hidden;
+    background-image: url("../img/saadrada.webp");
+    background-position: top;
+    background-size: 150px;
 }
 
 main {
