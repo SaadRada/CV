@@ -18,6 +18,16 @@ body {
     padding: 22px 48px;
 }
 
+.container {
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
 header {
     width: 100%;
     display: flex;
@@ -36,7 +46,7 @@ header .big-title {
 header .job-title {
     font-size: 25px;
     color: var(--primary-color);
-    letter-spacing: 5px;
+    letter-spacing: 3.5px;
 }
 
 .flex {
@@ -87,6 +97,7 @@ main .left {
 
 main .left > div {
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 main .right {
@@ -154,8 +165,13 @@ main .items span {
         width: 100%;
     }
 
-    header .flex.space > p {
-        font-size: 14px;
+    header .links {
+        margin: 10px 0;
+    }
+
+    header .flex.space {
+        width: 100%;
+        margin-bottom: 5px;
     }
 
     header .flex.space {
