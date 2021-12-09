@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white : #fff;
+    --primary-text : #101214;
+    --second-text : #73808D;
+    --primary-color : #2AAEE7;
+    --black-text : #333;
+}
+
+body {
+    margin: 0 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 22px 48px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+header .infos {
+    width: 70%;
+}
+
+header .big-title {
+    font-size: 38px;
+    letter-spacing: 5px;
+}
+
+header .job-title {
+    font-size: 25px;
+    color: var(--primary-color);
+    letter-spacing: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.space > img {
+    margin-right: 10px;
+}
+
+.flex.space {
+    width: 50%;
+    margin-bottom: 5px;
+}
+
+header .links {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .profile {
+    width: 30%;
+    padding-left: 40px;
+}
+
+header .profile .picture {
+    height: 150px;
+    width: 150px;
+    border: solid 1px var(--primary-color);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .left {
+    width: 68%;
+}
+
+main .left > div {
+    margin-bottom: 20px;
+}
+
+main .right {
+    width: 28%;
+}
+
+main .left > *,main .right > * {
+    margin-top: 5px;
+}
+
+main h2, main h3 {
+    color: var(--primary-color);
+    font-weight: 100;
+}
+
+main  p {
+    text-align: justify;
+    line-height: 20px;
+    color: var(--black-text);
+}
+
+main .time {
+    color: var(--second-text);
+    font-size: 13px;
+}
+
+main section {
+    margin-bottom: 3    0px;
+}
+
+main section h3 {
+    margin-top: 10px;
+}
+
+main .section-title {
+    color: var(--second-text);
+    padding-bottom: 10px;
+    margin: 10px 0;
+    border-bottom: solid 1px var(--second-text);
+}
+
+main .items {
+    margin-top: 10px;
+}
+
+main .items span {
+    line-height: 25px;
+    margin-right: 20px;
+    color: var(--black-text);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width : 1000px) {
+    body {
+        margin: 0;
+        padding: 10px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    header .infos {
+        width: 100%;
+    }
+
+    header .flex.space > p {
+        font-size: 14px;
+    }
+
+    header .flex.space {
+        justify-content: center;
+    }
+    
+    header .profile {
+        width: 100%;
+        order: -1;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    main .left, main .right {
+        width: 100%;
+    }
+
+    main .right {
+        order: -1;
+    }
+
+    main .right section {
+        margin: 10px 0;
+    }
+}
